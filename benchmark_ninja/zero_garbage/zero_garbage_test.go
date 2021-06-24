@@ -44,7 +44,7 @@ func BenchmarkZeroGarbage(b *testing.B) {
 	}
 }
 
-func BenchmarkGarbage(b *testing.B) {
+func BenchmarkHasGarbage(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		handleRequestWithoutPool(10)
 	}
